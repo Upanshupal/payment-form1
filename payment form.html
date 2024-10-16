@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <!-- just type link css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="#server location"></form>
+    <h1 class="mainhading">Payment form</h1>
+    <h2> contact information</h2>
+    <p>Name: *<input type="text" name="name" required placeholder="enter your name here"></p>  
+
+    <fieldset>
+        <legend>Gender * </legend>
+    <p>
+        male <input type="radio" name="gender" id="male" required>
+        female <input type="radio" name="gender" id="female" required>
+        other <input type="radio" name="gender" id="other" required> 
+    </p>
+</fieldset>
+<p>Address: <textarea name="Address" id="Address"></textarea>
+<textarea name="Address" id="add " cols="30" rows="10"></textarea></p>
+<p>Email: *<input type="email" name="email" id="email" required></p>
+<p>pincode *<input type="number" name="pincode" id="pincode" required></p>
+<h2>Payment information</h2>
+<p> card type: *
+    <select name="card type" id="cardtype" required>
+    <option value="">--select card type--</option>
+    <option value="visa">visa</option>
+    <option value="master card">master card</option>
+    <option value="rupay">rupay</option>
+</select>
+</p>
+    <p>card number *<input type="number" name="card_number" id="card_number" required>
+    </p>
+    <p> expiry *
+        <input type="date" name="epiray date" required>
+    </p>
+    <p>cvv *<input type="password" name="cvv" id="cvv" required></p>
+
+    <input type="submit" value="Pay Now">
+    </div>
+</body>
+
+</html>
